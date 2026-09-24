@@ -21,6 +21,7 @@ compose-foundation = { module = "org.jetbrains.compose.foundation:foundation", v
 compose-material = { module = "org.jetbrains.compose.material3:material3", version.ref = "material3" }
 compose-material-icons = { module = "org.jetbrains.compose.material:material-icons-extended", version.ref = "materialIcons" }
 compose-runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "compose" }
+compose-ui-tooling-preview = { module = "org.jetbrains.compose.ui:ui-tooling-preview", version.ref = "compose" }
 cup = { module = "net.kodein.cup:cup", version.ref = "cup" }
 cup-plugin-imageExport = { module = "net.kodein.cup:cup-plugin-image-export", version.ref = "cup" }
 # Enable if you need to support specific key events in your slides
@@ -47,6 +48,7 @@ compose = [
     "compose-material",
     "compose-material-icons",
     "compose-runtime",
+    "compose-ui-tooling-preview",
 ]
 cup = [
     "cup",
