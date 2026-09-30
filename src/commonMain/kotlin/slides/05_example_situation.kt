@@ -30,7 +30,9 @@ import meshcore_beginner_presentation.generated.resources.elmo_thunder
 import meshcore_beginner_presentation.generated.resources.green_check
 import meshcore_beginner_presentation.generated.resources.lilygo_tdeck
 import meshcore_beginner_presentation.generated.resources.red_cross
+import meshcore_beginner_presentation.generated.resources.repeater
 import meshcore_beginner_presentation.generated.resources.smartphone_in_hand
+import meshcore_beginner_presentation.generated.resources.wismesh_tag
 import net.kodein.cup.Slide
 import org.jetbrains.compose.resources.painterResource
 
@@ -68,9 +70,9 @@ fun ExampleSituationSlide(step: Int) {
                     AnimatedVisibility((step == 1)) { Sit2() }
                     AnimatedVisibility((step == 2)) { Sit3() }
                     AnimatedVisibility((step == 3)) { Sit4() }
-                    AnimatedVisibility((step == 4)) { Sit1() }
-                    AnimatedVisibility((step == 5)) { Sit1() }
-                    AnimatedVisibility((step == 6)) { Sit1() }
+                    AnimatedVisibility((step == 4)) { Sit5() }
+                    AnimatedVisibility((step == 5)) { Sit6() }
+                    AnimatedVisibility((step == 6)) { Sit7() }
                 }
 
                 Column(
@@ -203,6 +205,7 @@ fun Sit4() {
         Spacer(Modifier.height(32.dp))
         Text("No smartphones, let's try MeshCore")
         Text("If the distance is < 10 km ~ish; Problem solved")
+        Text("Battery powered, no power no problem.")
         Spacer(Modifier.height(16.dp))
         Column(
             modifier = Modifier.fillMaxWidth(),
@@ -211,12 +214,6 @@ fun Sit4() {
             Row(
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Text(
-                    "Battery powered, no power no problem.",
-                    fontSize = 10.sp,
-                    lineHeight = 10.sp,
-                    modifier = Modifier.widthIn(min = 10.dp, max = 50.dp)
-                )
                 Image(
                     painterResource(Res.drawable.lilygo_tdeck),
                     contentDescription = "Lilygo T-Deck",
@@ -225,20 +222,185 @@ fun Sit4() {
                 Spacer(Modifier.width(8.dp))
                 Text(
                     "Peer to peer",
-                    fontSize = 10.sp,
-                    modifier = Modifier.widthIn(min = 10.dp, max = 60.dp)
+                    fontSize = 12.sp,
+                    modifier = Modifier.widthIn(min = 10.dp, max = 70.dp)
                 )
                 Spacer(Modifier.width(8.dp))
                 Image(
                     painterResource(Res.drawable.lilygo_tdeck),
                     contentDescription = "Lilygo T-Deck",
-                    modifier = Modifier.height(32.dp)
+                    modifier = Modifier.height(64.dp)
                 )
                 Spacer(Modifier.width(8.dp))
                 Image(
                     painterResource(Res.drawable.green_check),
                     contentDescription = "Green check",
                     modifier = Modifier.height(48.dp)
+                )
+            }
+        }
+    }
+}
+
+@Composable
+fun Sit5() {
+    Column {
+        Spacer(Modifier.height(32.dp))
+        Text("No smartphones, let's try MeshCore")
+        Text("If the distance is < 10 km ~ish; Problem solved")
+        Text("Battery powered, no power no problem.")
+        Spacer(Modifier.height(16.dp))
+        Column(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Image(
+                    painterResource(Res.drawable.lilygo_tdeck),
+                    contentDescription = "Lilygo T-Deck",
+                    modifier = Modifier.height(64.dp)
+                )
+                Spacer(Modifier.width(8.dp))
+                Image(
+                    painterResource(Res.drawable.repeater),
+                    contentDescription = "repeater",
+                    modifier = Modifier.height(64.dp)
+                )
+                Spacer(Modifier.width(8.dp))
+                Image(
+                    painterResource(Res.drawable.lilygo_tdeck),
+                    contentDescription = "Lilygo T-Deck",
+                    modifier = Modifier.height(64.dp)
+                )
+                Spacer(Modifier.width(8.dp))
+                Image(
+                    painterResource(Res.drawable.green_check),
+                    contentDescription = "Green check",
+                    modifier = Modifier.height(48.dp)
+                )
+            }
+        }
+    }
+}
+
+
+@Composable
+fun Sit6() {
+    Column {
+        Spacer(Modifier.height(32.dp))
+        Text("Even bigger distance")
+        Text("Just add repeaters")
+        Text("Hops < 64")
+        Spacer(Modifier.height(16.dp))
+        Column(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Image(
+                    painterResource(Res.drawable.lilygo_tdeck),
+                    contentDescription = "Lilygo T-Deck",
+                    modifier = Modifier.height(64.dp)
+                )
+                Spacer(Modifier.width(8.dp))
+                Image(
+                    painterResource(Res.drawable.repeater),
+                    contentDescription = "repeater",
+                    modifier = Modifier.height(64.dp)
+                )
+                Spacer(Modifier.width(8.dp))
+                Image(
+                    painterResource(Res.drawable.repeater),
+                    contentDescription = "repeater",
+                    modifier = Modifier.height(64.dp)
+                )
+                Spacer(Modifier.width(8.dp))
+                Image(
+                    painterResource(Res.drawable.repeater),
+                    contentDescription = "repeater",
+                    modifier = Modifier.height(64.dp)
+                )
+                Spacer(Modifier.width(8.dp))
+                Image(
+                    painterResource(Res.drawable.lilygo_tdeck),
+                    contentDescription = "Lilygo T-Deck",
+                    modifier = Modifier.height(64.dp)
+                )
+                Spacer(Modifier.width(8.dp))
+                Image(
+                    painterResource(Res.drawable.green_check),
+                    contentDescription = "Green check",
+                    modifier = Modifier.height(48.dp)
+                )
+            }
+        }
+    }
+}
+
+
+@Composable
+fun Sit7() {
+    Column {
+        Spacer(Modifier.height(32.dp))
+        Text("No smartphones, let's try MeshCore")
+        Text("If the distance is < 10 km ~ish; Problem solved")
+        Text("Battery powered, no power no problem.")
+        Spacer(Modifier.height(16.dp))
+        Column(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Image(
+                    painterResource(Res.drawable.smartphone_in_hand),
+                    contentDescription = "Smartphone in hand",
+                    modifier = Modifier.height(48.dp)
+                )
+                Image(
+                    painterResource(Res.drawable.wismesh_tag),
+                    contentDescription = "WisMesh Tag",
+                    modifier = Modifier.height(48.dp)
+                )
+                Spacer(Modifier.width(8.dp))
+                Image(
+                    painterResource(Res.drawable.repeater),
+                    contentDescription = "repeater",
+                    modifier = Modifier.height(48.dp)
+                )
+                Spacer(Modifier.width(8.dp))
+                Image(
+                    painterResource(Res.drawable.repeater),
+                    contentDescription = "repeater",
+                    modifier = Modifier.height(48.dp)
+                )
+                Spacer(Modifier.width(8.dp))
+                Image(
+                    painterResource(Res.drawable.repeater),
+                    contentDescription = "repeater",
+                    modifier = Modifier.height(48.dp)
+                )
+                Spacer(Modifier.width(8.dp))
+                Image(
+                    painterResource(Res.drawable.wismesh_tag),
+                    contentDescription = "WisMesh Tag",
+                    modifier = Modifier.height(48.dp)
+                )
+                Image(
+                    painterResource(Res.drawable.smartphone_in_hand),
+                    contentDescription = "Smartphone in hand",
+                    modifier = Modifier.height(48.dp)
+                )
+                Spacer(Modifier.width(8.dp))
+                Image(
+                    painterResource(Res.drawable.green_check),
+                    contentDescription = "Green check",
+                    modifier = Modifier.height(32.dp)
                 )
             }
         }
