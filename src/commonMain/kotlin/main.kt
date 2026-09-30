@@ -16,6 +16,7 @@ import slides.s02_whoami
 import slides.s03_goals
 import slides.s04_what
 import slides.s05_example_situation
+import slides.s06_mesh
 import slides.todo
 
 val presentationSlides = Slides(
@@ -24,6 +25,7 @@ val presentationSlides = Slides(
     s03_goals,
     s04_what,
     s05_example_situation,
+    s06_mesh,
     todo
 )
 
