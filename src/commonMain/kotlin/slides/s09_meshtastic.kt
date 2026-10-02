@@ -32,8 +32,10 @@ fun MeshtasticSlide() {
     Box(Modifier.fillMaxWidth()) {
         Column {
             Row(Modifier.fillMaxWidth()) {
-                Column(Modifier.weight(1f),
-                    horizontalAlignment = Alignment.CenterHorizontally) {
+                Column(
+                    Modifier.weight(1f),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
                     Spacer(Modifier.height(32.dp))
                     Text(
                         "MeshCore\nvs\nMeshtastic",
