@@ -21,6 +21,7 @@ import slides.s07_how_radio
 import slides.s08_radio_eu
 import slides.s09_meshtastic
 import slides.s10_workshop
+import slides.s11_flashing
 import slides.todo
 
 val presentationSlides = Slides(
@@ -34,6 +35,7 @@ val presentationSlides = Slides(
     s08_radio_eu,
     s09_meshtastic,
     s10_workshop,
+    s11_flashing,
     todo
 )
 
