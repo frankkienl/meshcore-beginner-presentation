@@ -1,6 +1,6 @@
 
 // TODO: Change the name of your project here
-rootProject.name = "cup-presentation-template"
+rootProject.name = "meshcore-beginner-presentation"
 
 pluginManagement {
     repositories {
