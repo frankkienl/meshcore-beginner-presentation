@@ -2,8 +2,6 @@ package slides
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
-import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -42,44 +40,43 @@ val s05_example_situation by Slide(
         listOf(
             0..0 to """
                 There are 7 steps in this slide! (index+1; 1 - 7)
-            """.trimIndent(),
-            1..1 to """
+          
                 Alice and Bob are default names for talking about communication protocols; As in Person A and Person B.  
                 These names were always used during lectures on communication and cryptography  
                   
                 So sad the GIF's don't work (yet?)
             """.trimIndent(),
-            2..2 to """
+            1..1 to """
                 Smartphones, they can call or text  
                 
                 Problem solved, when making a LOT of assumptions!
                 Most importantly: We assume the 3G/4G/5G networks are working
             """.trimIndent(),
-            3..3 to """
+            2..2 to """
                 Now disaster strikes; We all received that booklet from the government!  
                 We should prepare a emergency kit; With an FM radio and a flashlight; Oh and food for 3 days.  
 
                 Power outage, cell network may survive a few hours. 
                 But (probably) not days. May not be related to lightning-storms.
             """.trimIndent(),
-            4..4 to """
+            3..3 to """
                 LilyGO T-Deck Plus. Show device!  
                 
                 Ditch the smartphone, and the proprietary networks. Don’t be a slave to corporations and/or the government.  
                 We’ll make our own communication, with Blackjack and … Meshcore!!  
             """.trimIndent(),
-            5..5 to """
+            4..4 to """
                 With bigger distances, the signal doesn’t reach. No more communication like “walkie-talkies”.
                 We need a signal booster. We can’t just increase the wattage of our transmitters though! These are limited by EU regulations.
                 Amateurs are only allowed to transmit a certain wattage, to make sure other signals aren’t disrupted.
 
                 What we can do, is use a repeater. It will hear (receive) the message from Alice, and re-transmit it so Bob can receive it.    
             """.trimIndent(),
-            6..6 to """
+            5..5 to """
                 With a bigger distance we can just increase the number of repeats.
                 MeshCore has a default hop limit of 64; Unlike Meshtastic
             """.trimIndent(),
-            7..7 to """
+            6..6 to """
                 In the previous slides, I’ve shown the LilyGO T-Deck devices; 
                 These are stand-alone devices. As in, no Smartphone needed. 
                 Just the LilyGO T-Deck is enough to communicate.

@@ -50,6 +50,9 @@ val s17_repeater_management by Slide(
             3..3 to """
                 Talk about not using too much traffic on the mesh network
             """.trimIndent(),
+            4..4 to """
+                This space has intentionally left blank.
+            """.trimIndent(),
             5..5 to """
                 Repeater name ... just it however. 
                 

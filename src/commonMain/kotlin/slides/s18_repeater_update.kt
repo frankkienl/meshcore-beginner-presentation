@@ -41,8 +41,14 @@ val s18_repeater_update by Slide(stepCount = 8, context = SpeakerNotes(
             Mention that Repeaters should be up high,
             nobody has 20m USB cable... right? OTA ftw!
         """.trimIndent(),
+        2..3 to """
+            This space has been left intentionally blank.
+        """.trimIndent(),
         4..4 to """
             DFU packages can be downloaded from the web Flasher 
+        """.trimIndent(),
+        5..6 to """
+            This space has been left intentionally blank.
         """.trimIndent(),
         7..7 to """
             ESP device make AP, connect to http://192.168.4.1/ and upload file.
