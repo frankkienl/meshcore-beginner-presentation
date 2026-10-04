@@ -20,6 +20,7 @@ import androidx.compose.ui.unit.dp
 import meshcore_beginner_presentation.generated.resources.Res
 import meshcore_beginner_presentation.generated.resources.eu
 import net.kodein.cup.Slide
+import net.kodein.cup.speaker.SpeakerNotes
 import org.jetbrains.compose.resources.painterResource
 import org.kodein.emoji.Emoji
 import org.kodein.emoji.compose.m3.TextWithNotoAnimatedEmoji
@@ -27,7 +28,23 @@ import org.kodein.emoji.symbols.other_symbol.CheckBoxWithCheck
 import org.kodein.emoji.symbols.other_symbol.CheckMark
 import org.kodein.emoji.symbols.other_symbol.CheckMarkGreen
 
-val s08_radio_eu by Slide(stepCount = 2) { stepIndex ->
+val s08_radio_eu by Slide(stepCount = 2, context = SpeakerNotes("""
+    Fun fact: 
+    Car-keys usually use 443 MHz
+
+    Other frequencies are not to be used freely; 
+    2G/3G/4G/5G frequencies are very expensive.
+
+    2.4 GHz is technically free to use, but is already crowded with Bluetooth, WiFi, ESP-NOW, ( Zigbee ? )
+    And the range is not enough for a communications system
+
+    Bridges to convert messages from 443 to 868 exist; 
+    But we recommend to just follow the crowd. 
+    That’s why these meetups exist, to make sure everyone is on the same page!
+
+    I haven’t found a source for the claim that the range is roughly the same; 
+    This is just something I heard someone say during a previous Mesh[Core/Tastic] meetup.
+""".trimIndent())) { stepIndex ->
     RadioEuSlide(stepIndex)
 }
 

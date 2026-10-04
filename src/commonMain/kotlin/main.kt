@@ -26,6 +26,13 @@ import slides.s11a_not_bad
 import slides.s12_app
 import slides.s13_app2
 import slides.s14_app3
+import slides.s15_sound_tip
+import slides.s16_end
+import slides.s17_repeater_management
+import slides.s18_repeater_update
+import slides.s19_home_assistant
+import slides.s20_sdr
+import slides.s21_end_fr
 import slides.todo
 
 val presentationSlides = Slides(
@@ -44,7 +51,13 @@ val presentationSlides = Slides(
     s12_app,
     s13_app2,
     s14_app3,
-    todo
+    s15_sound_tip,
+    s16_end,
+    s17_repeater_management,
+    s18_repeater_update,
+    s19_home_assistant,
+    s20_sdr,
+    s21_end_fr
 )
 
 

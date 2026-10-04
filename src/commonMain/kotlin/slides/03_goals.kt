@@ -20,9 +20,14 @@ import meshcore_beginner_presentation.generated.resources.Res
 import meshcore_beginner_presentation.generated.resources.devices
 import meshcore_beginner_presentation.generated.resources.goal
 import net.kodein.cup.Slide
+import net.kodein.cup.speaker.SpeakerNotes
 import org.jetbrains.compose.resources.painterResource
 
-val s03_goals by Slide {
+val s03_goals by Slide(
+    context = SpeakerNotes("""
+        Table of contents
+    """.trimIndent())
+) {
     GoalsSlide()
 }
 

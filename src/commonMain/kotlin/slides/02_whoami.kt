@@ -20,9 +20,17 @@ import meshcore_beginner_presentation.generated.resources.frankkie
 import meshcore_beginner_presentation.generated.resources.meshcore_logo
 import meshcore_beginner_presentation.generated.resources.pixelbar
 import net.kodein.cup.Slide
+import net.kodein.cup.speaker.SpeakerNotes
 import org.jetbrains.compose.resources.painterResource
 
-val s02_whoami by Slide {
+val s02_whoami by Slide(
+    context = SpeakerNotes(
+        """
+            Keep it short, nobody cares.  
+            Mention other the speakers, the real experts.
+        """.trimIndent()
+    )
+) {
     WhoamiSlide()
 }
 

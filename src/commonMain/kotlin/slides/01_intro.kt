@@ -26,6 +26,7 @@ import meshcore_beginner_presentation.generated.resources.cup
 import meshcore_beginner_presentation.generated.resources.meshcore_logo
 import meshcore_beginner_presentation.generated.resources.wismesh_tag
 import net.kodein.cup.Slide
+import net.kodein.cup.speaker.SpeakerNotes
 import net.kodein.cup.ui.styled
 import org.jetbrains.compose.resources.painterResource
 import org.kodein.emoji.Emoji
@@ -33,7 +34,17 @@ import org.kodein.emoji.compose.m3.TextWithPlatformEmoji
 import org.kodein.emoji.smileys_emotion.face_smiling.Wink
 
 
-val s01_intro by Slide {
+val s01_intro by Slide(
+    context = SpeakerNotes(
+        """
+            **Intro**
+            
+            First slide no longer says name of location.
+            We've done this presentation at multiple locations now, 
+            don't want to update the first slide every time.
+        """.trimIndent()
+    )
+) {
     IntroSlide()
 }
 
@@ -45,7 +56,7 @@ fun IntroSlide() {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "MeshCore workshop @ Hermit Hive",
+            text = "MeshCore workshop",
             style = MaterialTheme.typography.headlineLarge
         )
         HorizontalDivider(

@@ -27,10 +27,20 @@ import meshcore_beginner_presentation.generated.resources.meshcoreio_web3
 import meshcore_beginner_presentation.generated.resources.meshcoreio_web4
 import meshcore_beginner_presentation.generated.resources.meshcoreio_web_tty
 import net.kodein.cup.Slide
+import net.kodein.cup.speaker.SpeakerNotes
 import net.kodein.cup.widgets.material3.BulletPoints
 import org.jetbrains.compose.resources.painterResource
 
-val s11_flashing by Slide(stepCount = 6) { stepIndex ->
+val s11_flashing by Slide(stepCount = 6, context = SpeakerNotes("""
+    Just a Chromium based browser and done.
+    (Chrome, Brave, Edge, Opera GX, whatever)
+
+    ttyACM0 is COM-port on Windows!!
+
+    DFU is Device Firmware Upgrade mode; Usually needed to flash new firmware to a device.
+    When flashing for the first time, or flashing from a different base firmware (like Meshtastic, or the Stock firmware), make sure to Erase Flash.
+    Otherwise incorrect data may be present on the device after flashing.
+""".trimIndent())) { stepIndex ->
     FlashingSlide(stepIndex)
 }
 

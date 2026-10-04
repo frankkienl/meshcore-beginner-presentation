@@ -17,9 +17,17 @@ import meshcore_beginner_presentation.generated.resources.Res
 import meshcore_beginner_presentation.generated.resources.radio_spectrum
 import meshcore_beginner_presentation.generated.resources.radio_spectrum2
 import net.kodein.cup.Slide
+import net.kodein.cup.speaker.SpeakerNotes
 import org.jetbrains.compose.resources.painterResource
 
-val s07_how_radio by Slide {
+val s07_how_radio by Slide(
+    context = SpeakerNotes("""
+        We all know about Radio waves, and use them daily without realizing it.
+        WiFi, Bluetooth; For the Smarthome users, probably Zigbee or Thread too.
+        Used a smartphone? You’ve connected to 2G/3G/4G/5G cell towers.
+    """.trimIndent()
+    )
+) {
     HowRadioSlide()
 }
 

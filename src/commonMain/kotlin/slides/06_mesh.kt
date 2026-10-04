@@ -20,9 +20,15 @@ import meshcore_beginner_presentation.generated.resources.Res
 import meshcore_beginner_presentation.generated.resources.mesh
 import meshcore_beginner_presentation.generated.resources.meshcore_logo
 import net.kodein.cup.Slide
+import net.kodein.cup.speaker.SpeakerNotes
 import org.jetbrains.compose.resources.painterResource
 
-val s06_mesh by Slide {
+val s06_mesh by Slide(context = SpeakerNotes(
+    """
+        This is like a summary of previous slides. 
+        A great point for people to ask questions before we move on.
+    """.trimIndent()
+)) {
     MeshSlide()
 }
 

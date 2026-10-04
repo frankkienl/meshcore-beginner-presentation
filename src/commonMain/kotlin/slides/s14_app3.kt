@@ -26,9 +26,14 @@ import meshcore_beginner_presentation.generated.resources.meshcore_app_channel_t
 import meshcore_beginner_presentation.generated.resources.meshcore_app_menu
 import meshcore_beginner_presentation.generated.resources.meshcore_logo
 import net.kodein.cup.Slide
+import net.kodein.cup.speaker.SpeakerNotes
 import org.jetbrains.compose.resources.painterResource
 
-val s14_app3 by Slide(stepCount = 4) { stepIndex ->
+val s14_app3 by Slide(stepCount = 4, context = SpeakerNotes("""
+    hash-tag channel is a public channel.
+     
+    Yes everything is encrypted, but the key is derived from channel name in this case.
+""".trimIndent())) { stepIndex ->
     App3Slide(stepIndex)
 }
 

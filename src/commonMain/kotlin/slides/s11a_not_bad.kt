@@ -17,9 +17,12 @@ import meshcore_beginner_presentation.generated.resources.Res
 import meshcore_beginner_presentation.generated.resources.done
 import meshcore_beginner_presentation.generated.resources.wismesh_tag_photo
 import net.kodein.cup.Slide
+import net.kodein.cup.speaker.SpeakerNotes
 import org.jetbrains.compose.resources.painterResource
 
-val s11a_not_bad by Slide {
+val s11a_not_bad by Slide(context = SpeakerNotes("""
+    In my opinion, it’s very important that everyone who uses MeshCore, and update (flash) the device themselves. If you are the “computer person” in the family or friend-group, and you hand out MeshCore devices. Make sure everyone updates their devices once in a while. To make sure they are ready when it’s actually needed!
+""".trimIndent())) {
     NotBadSlide()
 }
 
