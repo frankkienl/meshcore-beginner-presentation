@@ -66,7 +66,7 @@ fun WhatSlide() {
         ) {
             GifImage(
                 painterResource(Res.drawable.what),
-                path = "files/what.gif",
+                path = "drawable/what.gif",
                 modifier = Modifier.width(110.dp),
                 contentDescription = "What"
             )

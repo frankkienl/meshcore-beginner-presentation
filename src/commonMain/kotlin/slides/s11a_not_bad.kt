@@ -19,10 +19,15 @@ import meshcore_beginner_presentation.generated.resources.wismesh_tag_photo
 import net.kodein.cup.Slide
 import net.kodein.cup.speaker.SpeakerNotes
 import org.jetbrains.compose.resources.painterResource
+import utils.GifImage
 
-val s11a_not_bad by Slide(context = SpeakerNotes("""
+val s11a_not_bad by Slide(
+    context = SpeakerNotes(
+        """
     In my opinion, it’s very important that everyone who uses MeshCore, and update (flash) the device themselves. If you are the “computer person” in the family or friend-group, and you hand out MeshCore devices. Make sure everyone updates their devices once in a while. To make sure they are ready when it’s actually needed!
-""".trimIndent())) {
+""".trimIndent()
+    )
+) {
     NotBadSlide()
 }
 
@@ -44,8 +49,9 @@ fun NotBadSlide() {
                 Text("Teach your loved ones")
 
                 Spacer(Modifier.height(16.dp))
-                Image(
+                GifImage(
                     painterResource(Res.drawable.done),
+                    path = "drawable/done.gif",
                     contentDescription = "done"
                 )
             }

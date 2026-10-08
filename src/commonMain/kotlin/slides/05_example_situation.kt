@@ -34,6 +34,7 @@ import meshcore_beginner_presentation.generated.resources.wismesh_tag
 import net.kodein.cup.Slide
 import net.kodein.cup.speaker.SpeakerNotes
 import org.jetbrains.compose.resources.painterResource
+import utils.GifImage
 
 val s05_example_situation by Slide(
     context = SpeakerNotes(
@@ -122,8 +123,9 @@ fun ExampleSituationSlide(step: Int) {
                     modifier = Modifier.fillMaxHeight(),
                     verticalArrangement = Arrangement.Center
                 ) {
-                    Image(
+                    GifImage(
                         painterResource(Res.drawable.alice),
+                        path = "drawable/alice.gif",
                         modifier = Modifier.width(64.dp),
                         contentDescription = "Alice",
                     )
@@ -145,8 +147,9 @@ fun ExampleSituationSlide(step: Int) {
                     modifier = Modifier.fillMaxHeight(),
                     verticalArrangement = Arrangement.Center
                 ) {
-                    Image(
+                    GifImage(
                         painterResource(Res.drawable.bob),
+                        path = "drawable/bob.gif",
                         modifier = Modifier.width(64.dp),
                         contentDescription = "Bob",
                     )
@@ -169,14 +172,16 @@ fun Sit1() {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Row {
-                Image(
+                GifImage(
                     painterResource(Res.drawable.cat_speaking),
+                    path = "drawable/cat_speaking.gif",
                     contentDescription = "Cat speaking",
                     modifier = Modifier.height(64.dp)
                 )
                 Spacer(Modifier.width(16.dp))
-                Image(
+                GifImage(
                     painterResource(Res.drawable.green_check),
+                    path = "drawable/green_check.gif",
                     contentDescription = "Green check",
                     modifier = Modifier.height(64.dp)
                 )
@@ -243,8 +248,9 @@ fun Sit3() {
                     modifier = Modifier.height(64.dp)
                 )
                 Spacer(Modifier.width(8.dp))
-                Image(
+                GifImage(
                     painterResource(Res.drawable.elmo_thunder),
+                    path = "drawable/elmo_thunder.gif",
                     contentDescription = "Elmo thunder",
                     modifier = Modifier.height(32.dp)
                 )
