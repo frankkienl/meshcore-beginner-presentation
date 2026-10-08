@@ -11,9 +11,15 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontStyle
@@ -23,6 +29,9 @@ import meshcore_beginner_presentation.generated.resources.Res
 import meshcore_beginner_presentation.generated.resources.what
 import net.kodein.cup.Slide
 import org.jetbrains.compose.resources.painterResource
+import utils.GifAnimation
+import utils.GifImage
+import utils.getGifDecoder
 
 val s04_what by Slide {
     WhatSlide()
@@ -55,8 +64,9 @@ fun WhatSlide() {
             horizontalAlignment = Alignment.End,
             verticalArrangement = Arrangement.Center
         ) {
-            Image(
+            GifImage(
                 painterResource(Res.drawable.what),
+                path = "drawable/what.gif",
                 modifier = Modifier.width(110.dp),
                 contentDescription = "What"
             )
